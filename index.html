@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head><title>
+    78 Javasript Arrays
+</title></head>
+
+<body>
+    
+    <p>How to declare the array?</p>
+    <h4 id="declaration_array"></h4>
+    <hr>
+
+    <p>Fetch the first element</p>
+    <h4 id="array1"></h4>
+    <hr>
+
+    <p>Fetch the second element</p>
+    <h4 id="array2"></h4>
+    <hr>
+
+    <p>Fetch the third element</p>
+    <h4 id="array3"></h4>
+    <hr>
+
+    <p>How to get the length of the array?</p>
+    <h4 id="length_array"></h4>
+    <hr>
+
+    <p>How to loop the array?</p>
+    <h4 id="loop_array"></h4>
+    <hr>
+
+    <p>How to add element at the end of the array?</p>
+    <h4 id="end_array"></h4>
+    <hr>
+
+    <p>How to add one more element at the end of the array?</p>
+    <h4 id="endmore_array"></h4>
+    <hr>
+
+    <p>How to declare the array with alphabet?</p>
+    <h4 id="alphabet_array"></h4>
+    <hr>
+
+    <p>How to sort the array with alphabets?</p>
+    <h4 id="sort_array"></h4>
+    <hr>
+
+    <p>How to reverse the array with alphabets?</p>
+    <h4 id="reverse_array"></h4>
+    <hr>
+
+    <p>How to declare the array with numbers?</p>
+    <h4 id="num_array"></h4>
+    <hr>
+
+    <p>How to find the maxinum number from the array?</p>
+    <h4 id="max_array"></h4>
+    <hr>
+
+    <p>How to find the mininum number from the array?</p>
+    <h4 id="min_array"></h4>
+    <hr>
+
+    <p>How to add element at the start of the the array?</p>
+    <h4 id="start_array"></h4>
+    <hr>
+
+    <p>How to add one more element at the start of the the array?</p>
+    <h4 id="start_more_array"></h4>
+    <hr>
+
+    <p>How to remove element from the start of the array?</p>
+    <h4 id="remove_start_array"></h4>
+    <hr>
+
+    <p>How to remove element at the end of the array the array?</p>
+    <h4 id="remove_end_array"></h4>
+    <hr>
+
+    <p>How to merge the array?</p>
+    <h4 id="merge_array"></h4>
+    <hr>
+</body>
+<script>
+
+    var fruits=["apple","orange","mango"];
+    console.log(fruits);
+    document.getElementById("declaration_array").innerHTML=fruits;
+
+    var fruits1= fruits[0];
+    console.log(fruits1);
+    document.getElementById("array1").innerHTML=fruits1;
+
+    var fruits2= fruits[1];
+    console.log(fruits2);
+    document.getElementById("array2").innerHTML=fruits2;
+
+    var fruits3= fruits[2];
+    console.log(fruits3);
+    document.getElementById("array3").innerHTML=fruits3;
+
+    var fruits_length= fruits.length;
+    console.log(fruits_length);
+    document.getElementById("length_array").innerHTML=fruits_length;
+
+    var array_value="";
+    for (var i = 0; i < fruits.length; i++){
+        console.log(fruits);
+        array_value=array_value + fruits[i]+"<br>";
+    }
+    document.getElementById("loop_array").innerHTML=array_value;
+    
+
+    fruits.push("lemon")
+    console.log(fruits);
+    document.getElementById("end_array").innerHTML=fruits;
+
+    fruits.push("cherry")
+    console.log(fruits);
+    document.getElementById("endmore_array").innerHTML=fruits;
+
+    var alphabets=["l","a","e","j","b","g","f","h","c","d","i","k"];
+    console.log(alphabets);
+    document.getElementById("alphabet_array").innerHTML=alphabets;
+    
+   alphabets.sort()
+   
+    console.log(alphabets);
+    document.getElementById("sort_array").innerHTML=alphabets;
+
+    alphabets.reverse()
+   
+    console.log(alphabets);
+    document.getElementById("reverse_array").innerHTML=alphabets;
+
+    var number=["4","45","100"];
+    console.log(number);
+    document.getElementById("num_array").innerHTML=number;
+
+    var maxnum=Math.max.apply(Math,number);
+    console.log(maxnumber);
+    document.getElementById("max_array").innerHTML=maxnum;
+
+    //adding element at the starting of the array using unshift method //How to add element at the start of the array ? the id to be refer for innerHTML is add_element_at_the_start_of_array fruits.unshift("watermelon"); console.log(fruits); document.getElementById("add_element_at_the_start_of_array").innerHTML = fruits; //How to more elements at the start of the array ? the id to be refer for innerHTML is add_more_element_at_the_start_of_array fruits.unshift("strawberry"); console.log(fruits); document.getElementById("add_more_element_at_the_start_of_array").innerHTML = fruits; //How to remove elements from the start of the array ? the id to be refer for innerHTML is remove_element_from_start_of_array fruits.shift(); console.log(fruits); document.getElementById("remove_element_from_start_of_array").innerHTML = fruits; //How to remove elements from the end of the array ? the id to be refer for innerHTML is remove_element_from_end_of_array fruits.pop();
+console.log(fruits); document.getElementById("remove_element_from_end_of_array").innerHTML = fruits; //How declare array with first world country ? var first_world_countries = ["USA" , "CANADA" , "JAPAN"]; //How declare array with second world country ? var second_world_countries = ["CHINA" , "RUSSIA" , "ROMANIA"]; //How to merge two arrays ? the id to be refer for innerHTML is merge_two_arrays var all_countries = first_world_countries.concat(second_world_countries); console.log(all_countries); document.getElementById("merge_two_arrays").innerHTML = all_countries;
+</script>
+</html>
